@@ -3,7 +3,7 @@ import email.mime.multipart
 import email.mime.text  
   
 msg=email.mime.multipart.MIMEMultipart()  
-msg['from']='15861591989@126.com'  
+msg['from']='tonyemail@126.com'  
 msg['to']='358777330@qq.com'  
 msg['subject']='test'  
 content=''''' 
@@ -18,6 +18,6 @@ msg.attach(txt)
 smtp=smtplib  
 smtp=smtplib.SMTP()  
 smtp.connect('smtp.126.com','25')  
-smtp.login('15861591989@126.com','*******')  
-smtp.sendmail('15861591989@126.com','358777330@qq.com',str(msg))  
+smtp.login('tonyemail@126.com','*******')  
+smtp.sendmail('tonyemail@126.com','358777330@qq.com',str(msg))  
 smtp.quit()  
